@@ -20,7 +20,6 @@ function generateSessions(id) {
       let hours = nums[pos] + 12;
       let mins = nums[pos] < 2.5 ? 0 : nums[pos] < 5 ? 15 : nums[pos] < 7.5 ? 30 : 45;
       sessions.push({
-        id: `${id}_${i}`,
         time: moment(date).add(hours, 'hours').add(mins, 'minutes'),
         seats: Math.round(200 - nums.reduce((acc, val) => { return acc + val; }) + (num * i))
       });

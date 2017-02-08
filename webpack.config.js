@@ -1,7 +1,7 @@
 require('dotenv').config();
 
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: [
@@ -15,6 +15,21 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            "presets": [ [ "es2015" ] ],
+            "plugins": [ "transform-es2015-destructuring", "transform-object-rest-spread", "transform-runtime" ]
+          }
+        }],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
@@ -25,23 +40,6 @@ module.exports = {
             'scss': 'vue-style-loader!css-loader!sass-loader',
             'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
           }
-          // other vue-loader options go here
-        }
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader'
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
         }
       }
     ]
@@ -65,9 +63,10 @@ if (process.env.NODE_ENV === 'development') {
   module.exports.plugins = [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin()
   ];
   module.exports.entry.push('webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000'); //?noInfo=true&quiet=true)
+  module.exports.module.rules[0].use.push({ loader: 'webpack-module-hot-accept' });
 }
 
 if (process.env.NODE_ENV === 'production') {
