@@ -1,5 +1,7 @@
 # Ultimate Vue.js Developers Course
 
+Source code for the [Ultimate Vue.js Developers Course](https://www.udemy.com/course/1022582) on Udemy.
+
 ### Project 2: Vue.js Cinema
 
 #### Demo
@@ -36,3 +38,8 @@ See the completed project here: [https://vuejs-cinema.getjsdojo.com/](https://vu
     ```
 
 5. Your site will be available at *localhost:[PORT]* where `PORT` is whatever value is set in your `.env` file.
+
+#### Udemy lecture branches
+
+Note that branches in the repo named `lecture/xxx` correspond to course lectures.
+
