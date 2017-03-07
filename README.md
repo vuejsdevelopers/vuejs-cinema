@@ -1,12 +1,12 @@
 # Ultimate Vue.js Developers Course
 
-Source code for the [Ultimate Vue.js Developers Course](https://www.udemy.com/course/1022582) on Udemy.
+Source code for the [Ultimate Vue.js Developers Course](http://bit.ly/2mPK8ny) on Udemy.
 
 ### Project 2: Vue.js Cinema
 
 #### Demo
 
-See the completed project here: [https://vuejs-cinema.getjsdojo.com/](https://vuejs-cinema.getjsdojo.com/)
+See the completed project here: [http://vuejs-cinema.getjsdojo.com/](http://vuejs-cinema.getjsdojo.com/)
 
 #### Installation
 
