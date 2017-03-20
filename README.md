@@ -14,7 +14,7 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
 
     ```
     cd /path/to/install/location
-    git clone git@github.com:getjsdojo/vuejs-cinema.git
+    git clone git@github.com:vuejsdevelopers/vuejs-cinema.git
     ```
 
 2. Install dependencies
