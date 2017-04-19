@@ -5,6 +5,7 @@
                         v-bind:movie="movie.movie"
                         v-bind:sessions="movie.sessions"
                         v-bind:day="day"
+                        v-bind:time="time"
             ></movie-item>
         </div>
         <div v-else-if="movies.length" class="no-results">

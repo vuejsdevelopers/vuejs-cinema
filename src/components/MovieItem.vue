@@ -17,16 +17,27 @@
     </div>
 </template>
 <script>
+    import times from '../util/times';
+
     export default {
-        props: [ 'movie', 'sessions', 'day' ],
+        props: [ 'movie', 'sessions', 'day', 'time' ],
         methods: {
             formatSessionTime(raw) {
                 return this.$moment(raw).format('h:mm A');
             },
             filteredSessions(sessions) {
-                return sessions.filter(session => {
-                    return this.$moment(session.time).isSame(this.day, 'day');
-                })
+                return sessions.filter(this.sessionPassesTimeFilter);
+            },
+            sessionPassesTimeFilter(session) {
+                if (!this.day.isSame(this.$moment(session.time), 'day')) {
+                    return false;
+                } else if (this.time.length === 0 || this.time.length === 2) {
+                    return true;
+                } else if (this.time[0] === times.AFTER_6PM) {
+                    return this.$moment(session.time).hour() >= 18;
+                } else {
+                    return this.$moment(session.time).hour() < 18;
+                }
             }
         }
     }
