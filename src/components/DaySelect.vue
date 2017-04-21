@@ -9,7 +9,6 @@
     export default {
         data() {
             return {
-                selected: this.$moment(),
                 days: [0, 1, 2, 3, 4, 5, 6 ].map(num => this.$moment().add(num, 'days'))
             };
         },
