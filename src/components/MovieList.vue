@@ -76,13 +76,6 @@
         },
         components: {
             MovieItem
-        },
-        directives: {
-            tooltip: {
-                bind(el, bindings) {
-                    console.log(el);
-                }
-            }
         }
     }
 </script>
