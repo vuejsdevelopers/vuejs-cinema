@@ -76,16 +76,6 @@
         },
         components: {
             MovieItem
-        },
-        directives: {
-            tooltip: {
-                bind(el, bindings) {
-                    let span = document.createElement('SPAN');
-                    let text = document.createTextNode(`Seats available: ${bindings.value.seats}`);
-                    span.appendChild(text);
-                    el.appendChild(span);
-                }
-            }
         }
     }
 </script>
