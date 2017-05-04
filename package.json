@@ -6,7 +6,7 @@
   "author": "Anthony Gore <info@getjsdojo.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/getjsdojo/vuejs-cinema"
+    "url": "https://github.com/vuejsdevelopers/vuejs-cinema"
   },
   "license": "UNLICENSED",
   "scripts": {
