@@ -12,10 +12,17 @@ const $http = axios.create({
 
 function generateSessions(id) {
   let sessions = [];
-  let nums = id.replace('tt', '').split('').map(item => parseInt(item)).reverse();
+  let nums = id.replace('tt', '').split('').map(item => {
+    let num = parseInt(item);
+    if (num === 0) { num = 1; }
+    if (num > 6) { num = num - 2; }
+    return num;
+  });
+  nums.splice(nums[3], 0, nums[0]);
+  nums.shift();
   nums.forEach((num, index) => {
     let date = moment().startOf('day').add(index, 'days');
-    for (let i = 0; i <= num; i++) {
+    for (let i = 0; i < num; i++) {
       let pos = index + i <= nums.length ? index + i : index + i - nums.length;
       let hours = nums[pos] + 12;
       let mins = nums[pos] < 2.5 ? 0 : nums[pos] < 5 ? 15 : nums[pos] < 7.5 ? 30 : 45;
