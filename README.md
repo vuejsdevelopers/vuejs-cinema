@@ -24,6 +24,7 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
     
         ```
         cd /path/to/install/location
+        
         git clone git@github.com:[your_username]/vuejs-cinema.git
         ```
     
@@ -33,6 +34,7 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
     
     ```
     cd /path/to/install/location
+    
     git clone https://github.com/vuejsdevelopers/vuejs-cinema.git
     ```    
    
