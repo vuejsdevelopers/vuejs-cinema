@@ -1,11 +1,9 @@
-export default Object.freeze({
-  ACTION: 'Action',
-  ADVENTURE: 'Adventure',
+module.exports = Object.freeze({
   ANIMATION: 'Animation',
   COMEDY: 'Comedy',
-  FAMILY: 'Family',
+  CRIME: 'Crime',
+  DOCUMENTARY: 'Documentary',
+  DRAMA: 'Drama',
   FANTASY: 'Fantasy',
-  MUSICAL: 'Musical',
-  SCI_FI: 'Sci-Fi',
-  THRILLER: 'Thriller'
+  HORROR: 'Horror'
 });
