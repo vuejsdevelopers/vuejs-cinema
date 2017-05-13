@@ -7,7 +7,7 @@ moment.tz.setDefault("UTC");
 
 // Axios
 const $http = axios.create({
-  baseURL: 'http://www.omdbapi.com/',
+  baseURL: `http://localhost:${process.env.PORT}/offline_api`,
 });
 
 function generateSessions(id) {
