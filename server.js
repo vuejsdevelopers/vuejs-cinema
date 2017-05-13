@@ -31,10 +31,14 @@ app.get('/api', function(req, res) {
   });
 });
 
+let offlineData = JSON.parse(fs.readFileSync(path.resolve('./api_offline.json'), 'utf-8'));
+app.get('/offline_api', function(req, res) {
+  res.json(offlineData.find(item => item.imdbID === req.query.i));
+});
+
 app.listen(process.env.PORT, function () {
   console.log(`Example app listening on port ${process.env.PORT}!`);
   if (process.env.NODE_ENV === 'development') {
     require('open')(`http://localhost:${process.env.PORT}`);
   }
 });
-
