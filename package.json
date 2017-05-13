@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The Ultimate Vue.js Developers Course: Vue.js Cinema",
   "main": "server.js",
-  "author": "Anthony Gore <info@getjsdojo.com>",
+  "author": "Anthony Gore <anthony@vuejsdevelopers.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/vuejsdevelopers/vuejs-cinema"
