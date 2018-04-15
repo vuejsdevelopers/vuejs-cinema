@@ -10,33 +10,21 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
 
 #### Pre-installation
 
-- Ensure [NPM](https://docs.npmjs.com) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed on your system
+- Ensure [Node.js  >=5.10](https://nodejs.org/en/download/), [NPM](https://docs.npmjs.com) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed on your system
 
 
 #### Installation
 
 1. Install this code on your local system
- 
-    **Option 1 (recommended)**
     
-    1. Fork this repository (see top right corner)
+    1. Fork this repository (click 'Fork' button in top right corner)
     2. Clone the forked repository on your local file system
     
         ```
         cd /path/to/install/location
         
-        git clone git@github.com:[your_username]/vuejs-cinema.git
-        ```
-    
-    **Option 2 (easier)**
-    
-    This option is better if you're not a Github user or are not sure how to setup SSH keys
-    
-    ```
-    cd /path/to/install/location
-    
-    git clone https://github.com/vuejsdevelopers/vuejs-cinema.git
-    ```    
+        git clone https://github.com/[your_username]/vuejs-cinema.git
+        ```  
    
 2. Install dependencies
 
