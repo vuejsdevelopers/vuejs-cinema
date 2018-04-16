@@ -26,13 +26,19 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
         git clone https://github.com/[your_username]/vuejs-cinema.git
         ```  
    
-2. Install dependencies
+2. Change into directory
+
+    ```
+    cd vuejs-cinema
+    ```
+    
+3. Install dependencies
 
     ```
     npm install
     ```
 
-3. Create a `.env` file by copying the sample
+4. Create a `.env` file by copying the sample
 
     ```
     cp .env_sample .env
@@ -40,7 +46,7 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
     
     Edit the .env file and replace any variables if needed
     
-4. Start project
+5. Start project
 
     ```
     npm run start
