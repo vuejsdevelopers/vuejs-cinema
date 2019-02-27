@@ -51,7 +51,13 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
 
 Your site will be available at *localhost:[PORT]* where `PORT` is whatever value is set in your `.env` file.
 
-#### Lecture branches
+## Sponsors
+
+<a href="https://vueschool.io" target="_blank"><img src="https://vueschool.io/img/logo/vueschool_logo_multicolor.svg" height="40" alt="Vue School"/></a>
+
+[Support Vue.js Developers](https://www.patreon.com/anthonygore?utm-source=github-vjd&utm-medium=link&utm_campaign=sponsors) to get your logo here.
+
+## Lecture branches
 
 Each branch of of the repo shows the state of the code at the end of any particular video e.g. `video/08` shows the state at the end of video 8.
 
