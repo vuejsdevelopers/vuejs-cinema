@@ -35,7 +35,7 @@
     "file-loader": "~0.9.0",
     "moment": "~2.23.0",
     "moment-timezone": "~0.5.11",
-    "node-sass": "~4.14.1",
+    "node-sass": "~7.0.0",
     "opn": "~5.4.0",
     "sass-loader": "~4.1.1",
     "style-loader": "~0.13.1",
